@@ -5,23 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <script src="https://kit.fontawesome.com/37de15b03f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
-    <nav role="navigation">Nav</nav>
+    
+    <nav role="navigation">
+        
+        <div class="name">Amy Amrani</div>
+        
+        <div class="hamburger">&#9776;</div>
+        
+        <ul class="menu">
+			<li>About</li>
+			<li>Projects</li>
+			<li>Contact</li>    
+        </ul>
+    
+    </nav>
+    
     <main role="main">
-        <header role="banner">
-            <h1>Bio</h1>
+        
+        <header role="header">
+            
+            <div class="headshot"><img src="https://www.newsusa.com/wp-content/uploads/2019/11/staffmember-placeholder-female.jpg" /></div>
+            
+            <div class="bio">
+                
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h1>Curabitur at tortor at justo ornare semper et id ex.</h1>
+                
+                <p>Maecenas euismod lacus eu erat viverra eleifend. Quisque consequat magna quis nulla posuere consequat. Suspendisse elit neque, euismod sed feugiat vitae, bibendum laoreet enim.</p>
+                <p>Suspendisse sem nisi, rutrum quis magna vitae, convallis tristique lectus. Nunc ac eros arcu. Pellentesque gravida elit in pulvinar dapibus. Vestibulum in hendrerit nisl. Duis a mi erat. </p>
+                <p>Donec vitae lorem fringilla, dignissim nunc eu, molestie dui.</p>
+            
+            </div>
+        
         </header>
 
         <section>
-            Projects
-        </section>
+
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project"> 
+                
+                <div class="project-screenshot"><img src="https://www.specim.fi/iq/wp-content/uploads/2017/11/screenshot-placeholder-300x169.jpg" /></div>
+                
+                <h3>Project Title #1</h3>
+                
+                <ul class="project-description">
+                    <li>Donec vitae lorem fringilla, dignissim nunc eu, molestie dui.</li>
+                    <li>Aliquam tempus sapien non hendrerit auctor. Donec venenatis posuere libero a vehicula.</li>
+                </ul>
+            
+                <div class="project-links"> 
+                    <a href="#" class="button">GitHub</a>   
+                    <a href="#" class="button">View Project</a>       
+                </div>  
+                    
+            </div>     
+            
+            <div class="project"> 
+                
+                <div class="project-screenshot"><img src="https://www.specim.fi/iq/wp-content/uploads/2017/11/screenshot-placeholder-300x169.jpg" /></div>
+                
+                <h3>Project Title #2</h3>
+                
+                <ul class="project-description">
+                    <li>Donec vitae lorem fringilla, dignissim nunc eu, molestie dui.</li>
+                    <li>Aliquam tempus sapien non hendrerit auctor. Donec venenatis posuere libero a vehicula.</li>
+                    </ul>
+            
+                <div class="project-links"> 
+                    <a href="#" class="button">GitHub</a>   
+                    <a href="#" class="button">View Project</a>        
+                </div>    
+            
+            </div>
+            
+        </section>    
 
         <section>
-            Contact Me!
+            
+            <h2 class="section-title">Contact me!</h2>
+            
+            <ul class="contact">
+                <li class="contact-icon"><i class="fab fa-github-square"></i></li>
+                <li class="contact-icon"><i class="fab fa-linkedin"></i></li>
+                <li class="contact-icon"><i class="fas fa-envelope-square"></i></li>
+            </ul>
+
         </section>
+    
     </main>
-    <footer role="content-info">Footer</footer>
+    
+    <footer>
+        <p class="copyright">&copy; Amy Amrani 2020</p>
+    </footer>
+
 </body>
 </html>
