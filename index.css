@@ -4,13 +4,18 @@
   
 body {
     font-family: "Open Sans", sans-serif; 
-    color: black;
+    color: #2D3748;
     margin: 0;
+}
+
+a, a:visited {
+    color: #ED8936; 
+    font-weight: bold;
 }
 
 nav, footer {
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(115, 115, 115);
+    background-color: #718096;
     color: white;
     padding: 10px;
     height: 45px;
@@ -51,6 +56,15 @@ header {
     width: 80%;
 }
 
+.name {
+    padding-left: 30px;
+}
+
+
+h1 i {
+    color: orange;
+}
+
 .headshot {
     margin-right: 30px;
 }
@@ -58,6 +72,10 @@ header {
 .headshot img {
     height: 200px;
     width: auto;
+}
+
+.project-description i {
+    font-size: 30px;
 }
 
 .section-title {
@@ -69,24 +87,31 @@ header {
 section {
     min-height: 200px;
     padding: 30px 0;
-    background-color: #bbb;
+    background-color: white;
 }
 
 .project {
-    max-width: 1000px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     padding-bottom: 50px;
 }
 
+.project:last-child {
+    padding-bottom: 20px;
+}
+
 .project-screenshot img {
     height: auto;
     width: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .project-description li {
     list-style: none;
+    line-height: 30px;
 }
 
 .project-description {
@@ -98,7 +123,7 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: #ddd;
+    background-color: #E2E8F0;
 }
 
 .contact {
@@ -112,6 +137,11 @@ section:nth-child(even) {
 
 .contact-icon i {
     font-size: 30px;
+    color: #718096;
+}
+
+.contact-icon i:hover {
+    color: #2D3748;
 }
 
 .contact-icon + .contact-icon {
@@ -138,8 +168,6 @@ footer {
     }
 }  
 
-
-
 @media screen and (min-width:800px) {
     .hamburger {
         display: none;
@@ -153,7 +181,12 @@ footer {
     }
 
     .menu li {
-        padding-right: 30px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .menu li:hover {
+        text-decoration: underline;
     }
 
     header {
