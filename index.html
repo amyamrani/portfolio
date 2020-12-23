@@ -10,120 +10,187 @@
 </head>
 
 <body>
-    
+
     <nav>
-        <div class="nav-container">
-            <div class="name">Amy Amrani</div>
-            <div class="hamburger">&#9776;</div>
-            
-            <ul class="menu">
-                <li id="about-link">About</li>
-                <li id="projects-link"> Projects</li>
-                <li id="contact-link"> Contact</li>    
-            </ul>
-        </div>   
-        
-        <div class="sub-menu">
-            <ul class="menu">
-                <li id="sub-menu-about-link">About</li>
-                <li id="sub-menu-projects-link"> Projects</li>
-                <li id="sub-menu-contact-link"> Contact</li>    
-            </ul>
-        </div>
+      <div class="nav-container">
+        <div></div>
+        <div class="hamburger">&#9776;</div>
+
+        <ul class="menu">
+            <li id="about-link">About</li>
+            <li id="projects-link">Projects</li>
+            <li id="contact-link">Contact</li>
+        </ul>
+      </div>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li id="sub-menu-about-link">About</li>
+          <li id="sub-menu-projects-link">Projects</li>
+          <li id="sub-menu-contact-link">Contact</li>
+        </ul>
+      </div>
     </nav>
 
-    
+
     <main>
-        
-        <header>
-            <div class="headshot"><img src="./images/portfolio-pic.jpg" alt="headshot" /></div>
-            
-            <div class="bio">
-                <h1>Hi, my name is Amy.<br>I am a web developer based in <i class="fas fa-sun"></i> South Florida.</h1>
-                
-                <p>After holding a variety of positions from customer support to project management in the tech industry, making the switch to web development was an aha! moment for me.</p>
-                <p>I have a team-oriented personality from growing up playing sports and working closely with others on projects. I’m looking to join a team of developers where I can continue to learn, collaborate and thrive.</p>
-                <p>My attention to detail and passion for making things come to life allow me to build intuitive interfaces with clean code.</p>    
-                <p>In my free time, I enjoy pool days with my family and walks with our dog, Maverick.</p>
+      <section class="hero" id="hero-section">
+        <div class="hero-content">
+
+          <div class="image-wrap">
+            <div class="image-inner"></div>
+            <img src="./images/portfolio_headshot.jpg" alt="headshot" />
+            <div class="image-outer"></div>
+          </div>
+
+          <div class="hero-info">
+            <h1 class="hero-name">Amy<br />Amrani</h1>
+            <h2 class="hero-role">Full-Stack Software Developer</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-section" class="about-section">
+        <div class="about-content">
+          <h2 class="about-title">
+            Hi! I'm a developer based in South Florida.
+          </h2>
+
+          <div class="about-body">
+            <p>
+              After holding a variety of positions from customer support to project management in the tech industry, making the switch to web development was an aha! moment for me.
+            </p>
+
+            <p>
+              I have a team-oriented personality from growing up playing sports and working closely with others on projects. I’m looking to join a team of developers where I can continue to learn, collaborate and thrive.
+            </p>
+
+            <p>
+              My attention to detail and passion for making things come to life allow me to build intuitive interfaces with clean code.
+            </p>
+
+
+            <p>
+              In my free time, I enjoy pool days with my family and walks with our dog, Maverick.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-section" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-content">
+          <div class="project">
+            <div class="project-screenshot"><img src="./images/products_screenshot.png" alt="homerecs screenshot"/></div>
+
+            <div class="project-content">
+              <h3 class="project-title">HomeRecs</h3>
+
+              <ul class="project-details">
+                <li>
+                  <i class="fab fa-react"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-node-js"></i>
+                </li>
+                <li class="project-tech-stack">React, Node.js, PostgreSQL, Knex.js, JWT, bcrypt.js, Mocha, Chai, CSS, Vercel, Heroku</li>
+                <li class="project-description">Connects friends and family to share the products they love so you can feel confident about the products you buy.</li>
+              </ul>
+
+              <div class="project-links">
+                  <a class="button" href="https://github.com/amyamrani/homerecs" target="_blank">GitHub</a>
+                  <a class="button" href="https://homerecs.vercel.app" target="_blank">View Project</a>
+              </div>
             </div>
-        </header>
+          </div>
 
-        <section id="project-section">
+          <div class="project">
+            <div class="project-screenshot"><img src="./images/steady_learning_screenshot.png" alt="steady learning screenshot"/></div>
 
-            <h2 class="section-title">Projects</h2>
-            
-            <div class="project"> 
-                <div class="project-screenshot"><img src="./images/capitals-quiz-app-screenshot.png" alt="capitals quiz screenshot"/></div>
-                
-                <h3>Capitals Quiz</h3>
-                
-                <ul class="project-description">
-                    <li>
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js-square"></i>
-                    </li>
-                    <li>HTML, CSS, JavaScript, jQuery</li>
-                    <li>Capitals Quiz is an app that tests your knowledge on the capitals across the world.</li>
-                </ul>
-            
-                <div class="project-links"> 
-                    <a href="https://github.com/amyamrani/quiz-app" class="button">GitHub</a>   
-                    <a href="https://amyamrani.github.io/quiz-app/" class="button">View Project</a>       
-                </div>       
-            </div>      
+            <div class="project-content">
+              <h3 class="project-title">Steady Learning</h3>
 
-            <div class="project"> 
-                <div class="project-screenshot"><img src="./images/holiday-finder-screenshot.png" alt="holiday finder screenshot"/></div>
-                
-                <h3>Holiday Finder</h3>
-                
-                <ul class="project-description">
-                    <li>
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js-square"></i>
-                    </li>
-                    <li>HTML, CSS, JavaScript, jQuery</li>
-                    <li>Provides users with a list of holidays for a specific date or year in different countries around the world using the Calendarific API.</li>
-                </ul>
-            
-                <div class="project-links"> 
-                    <a href="https://github.com/amyamrani/holiday-finder" class="button">GitHub</a>   
-                    <a href="https://amyamrani.github.io/holiday-finder/" class="button">View Project</a>       
-                </div>       
-            </div>      
-        </section>    
+              <ul class="project-details">
+                <li>
+                  <i class="fab fa-react"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-node-js"></i>
+                </li>
+                <li class="project-tech-stack">React, Node.js, PostgreSQL, Knex.js, JWT, bcrypt.js, Mocha, Chai, CSS, Vercel, Heroku</li>
+                <li class="project-description">Users are provided with a new article each day about a topic that they are interested in learning about for a set number of days.</li>
+              </ul>
 
-        <section id="contact-section">
-            
-            <h2 class="section-title">Contact me!</h2>
-            
-            <ul class="contact">
-                <li class="contact-icon">
-                    <a href="https://github.com/amyamrani">
-                        <i class="fab fa-github-square"></i>
-                    </a>
+              <div class="project-links">
+                <a class="button" href="https://github.com/amyamrani/steady-learning" target="_blank">GitHub</a>
+                <a class="button" href="https://steady-learning.vercel.app" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-screenshot"><img src="./images/holiday_finder_screenshot.png" alt="holiday finder screenshot"/></div>
+
+            <div class="project-content">
+              <h3 class="project-title">Holiday Finder</h3>
+
+              <ul class="project-details">
+                <li>
+                  <i class="fab fa-js-square"></i>
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
                 </li>
 
-                <li class="contact-icon">
-                    <a href="https://www.linkedin.com/in/amy-amrani/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>    
+                <li class="project-tech-stack">JavaScript, jQuery, HTML5, CSS</li>
+                <li class="project-description">Provides users with a list of holidays for a specific date or year in different countries around the world using the Calendarific API.</li>
+              </ul>
 
-                <li class="contact-icon">
-                    <a href="mailto:vesamrani@gmail.com">
-                        <i class="fas fa-envelope-square"></i>
-                    </a>
-                </li>
+              <div class="project-links">
+                <a class="button" href="https://github.com/amyamrani/holiday-finder" target="_blank">GitHub</a>
+                <a class="button" href="https://amyamrani.github.io/holiday-finder/" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-section" class="contact-section">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 class="contact-title">Contact Me</h2>
+
+            <ul class="contact-links">
+              <li>
+                <a class="contact-link" href="https://github.com/amyamrani" target="_blank">
+                  <i class="fab fa-github-square"></i> <span class="contact-link-name">GitHub</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="contact-link" href="https://www.linkedin.com/in/amy-amrani/" target="_blank">
+                  <i class="fab fa-linkedin"></i> <span class="contact-link-name">LinkedIn</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="contact-link" href="mailto:amy@amrani.io">
+                  <i class="fas fa-envelope-square"></i> <span class="contact-link-name">Email</span>
+                </a>
+              </li>
             </ul>
-        </section>
-    
+          </div>
+
+          <div class="image-wrap">
+            <div class="image-inner"></div>
+            <img src="./images/contact_photo.jpg" alt="contact image" />
+            <div class="image-outer"></div>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <footer>
-        <p class="copyright">&copy; Amy Amrani 2020</p>
+      <p class="copyright">&copy; Amy Amrani 2020</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

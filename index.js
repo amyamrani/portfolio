@@ -1,12 +1,18 @@
+$('#top-link').click(() => {
+  $('html, body').animate({
+      scrollTop: $('header').offset().top
+  }, 200);
+});
+
 $('#about-link, #sub-menu-about-link').click(() => {
     $('html, body').animate({
-        scrollTop: $('header').offset().top
+        scrollTop: $('#about-section').offset().top
     }, 200);
 });
 
 $('#projects-link, #sub-menu-projects-link').click(() => {
     $('html, body').animate({
-        scrollTop: $('#project-section').offset().top
+        scrollTop: $('#projects-section').offset().top
     }, 200);
 });
 
